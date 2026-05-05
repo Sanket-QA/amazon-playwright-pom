@@ -1,0 +1,29 @@
+{
+  "name": "amazon-automation-project",
+  "version": "1.0.0",
+  "description": "Amazon India Automation Project using Playwright with Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:login": "npx playwright test tests/loginTest.spec.ts",
+    "test:price": "npx playwright test tests/highestLowestPrice.spec.ts",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "clean": "rm -rf test-results playwright-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "amazon",
+    "pom",
+    "e2e-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
